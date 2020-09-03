@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Admin | CORK - Multipurpose Bootstrap Dashboard Template</title>
     <script src="https://use.fontawesome.com/3005ba773c.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/logos/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -14,9 +15,8 @@
 <body>
     <header class="main-header">
         <div class="main-header__div">
-            <div class="left-header">
-                <div class="logo-name">
-                    <svg version="1.1" class="main-svg left-header__item" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 672 723" style="enable-background:new 0 0 672 723;" xml:space="preserve">
+            <div class="logo-name">
+                <svg version="1.1" class="main-svg left-header__item" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 672 723" style="enable-background:new 0 0 672 723;" xml:space="preserve">
                     <style type="text/css">
                         .st0{fill:#C2D5FF;}
                         .st1{fill:#FFBB44;}
@@ -32,14 +32,17 @@
                         <circle class="st1" cx="375.4" cy="322.9" r="100"/>
                     </g>
                                  </svg>
-                    <h1 class="left-header__item">CORK</h1>
-                </div>
-                <input class="left-header__item" type="search" placeholder="Search...">
+
+                <h1 class="left-header__item">CORK</h1>
             </div>
-            <div class="right-header">
+            <div class="left-header__item input">
+                <i class="fa fa-search" style="color:#ccc;" aria-hidden="true"></i>
+                <input type="search" placeholder="Search...">
+            </div>
+            <div class="right-header ml-auto">
                 <div class="languages dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/flags/ca.png" style="width: 33px; height: 33px;" alt="">
+                        <img src="assets/images/flags/ca.png" style="width: 20px; height: 20px;" alt="">
                       </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">
@@ -62,7 +65,7 @@
                 </div>
                 <div class="messages dropdownleft">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                       </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item user" href="#">
@@ -90,7 +93,7 @@
                 </div>
                 <div class="notifications">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                       </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item notification" href="#">
@@ -115,7 +118,7 @@
                 </div>
                 <div class="profile">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/users/profile-16.jpeg" width="35px" style="border-radius: 5px;" alt="">
+                        <img src="assets/images/users/profile-16.jpeg" width="24px" style="border-radius: 5px;" alt="">
                       </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item profile" href="#">
@@ -150,7 +153,9 @@
         </div>
         <div class="page-header__container">
             <div class="page-header">
-                <i class="fa fa-bars fa-2x" style="color: white;" aria-hidden="true"></i>
+                <button style="background: none;border: none;">
+                    <i class="fa fa-bars fa-2x nav-activate" style="color: white;" aria-hidden="true"></i>
+                </button>
                 <p>Dashboard/Sales</p>
                 <div class="dropdown settings">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -209,7 +214,7 @@
 
             </div>
         </div>
-        <div class="content container">
+        <div class="content">
             <div class="row">
                 <img class="col-md-8" src="assets/images/main-images/grid-1-1.jpg" alt="">
                 <img class="col-md-4" src="assets/images/main-images/grid-1-2.jpg" alt="">
@@ -220,13 +225,307 @@
                 <img class="col-md-4" src="assets/images/main-images/grid-2-3.jpg" alt="">
             </div>
             <div class="row">
-                <img class="col-md-5" src="assets/images/main-images/grid-3-1.jpg" alt="">
+                <div class="col-md-5 tables">
+                    <h3 class="pt-3">Transactions</h3>
+                    <div class="d-flex align-items-center table">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style=" height: 2rem; padding:3px; width: 2rem; background-color: #e2a03f; border-radius:50%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-home mb-3"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <div class="ml-2">
+                            <h3>Electricity Bill</h3>
+                            <p>4 Aug 1:00pm</p>
+                        </div>
+                        <p class="ml-auto mr-2">-$16.44&darr;</p>
+                    </div>
+                    <div class="d-flex align-items-center table">
+                        <span style="background-color:#e7515a; border-radius: 50%; width: 2rem; height: 2rem; padding-left: 7px; padding-top: 4px;" class="mb-2">SP</span>
+                        <div class="ml-2">
+                            <h3>Electricity Bill</h3>
+                            <p>4 Aug 1:00pm</p>
+                        </div>
+                        <p class="ml-auto mr-2" style="color: #009688;">$66.44&uarr;</p>
+                    </div>
+                    <div class="d-flex align-items-center table">
+                        <span style="background-color:#e7515a; border-radius: 50%; width: 2rem; height: 2rem; padding-left: 7px; padding-top: 4px;" class="mb-2">AD</span>
+                        <div class="ml-2">
+                            <h3>Electricity Bill</h3>
+                            <p>4 Aug 1:00pm</p>
+                        </div>
+                        <p class="ml-auto mr-2" style="color: #009688;">$66.44&uarr;</p>
+                    </div>
+                    <div class="d-flex align-items-center table">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style=" height: 2rem; padding:3px; width: 2rem; background-color: yellow; border-radius:50%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-home mb-3"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <div class="ml-2">
+                            <h3>Electricity Bill</h3>
+                            <p>4 Aug 1:00pm</p>
+                        </div>
+                        <p class="ml-auto mr-2">-$32.00&darr;</p>
+                    </div>
+                </div>
                 <img class="col-md-3" src="assets/images/main-images/grid-3-2.jpg" alt="">
-                <img class="col-md-4" src="assets/images/main-images/grid-3-3.jpg" alt="">
+                <div class="col-md-4 tables">
+                    <div>
+                        <h3 class="pt-2 pl-2">Account Info</h3>
+                        <div class="table2">
+                            <h4>Balance</h4>
+                            <p>$470</p>
+                            <div class="plans">
+                                <div class="d-flex justify-content-between">
+                                    <p>Monthly Plan</p>
+                                    <p>$ 199</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Taxes</p>
+                                    <p>$ 17.82</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Extras this month</p>
+                                    <p>$ -0.68</p>
+                                </div>
+                                <div class="d-flex justify-content-between colored">
+                                    <p>Netflix yearyl subscription</p>
+                                    <p>$ 0</p>
+                                </div>
+                                <div class="d-flex justify-content-between colored">
+                                    <p>Others</p>
+                                    <p>$ -0.68</p>
+                                </div>
+                            </div>
+                            <div class="table-buttons d-flex justify-content-around">
+                                <button type="button" class="btn btn-success">Summary</button>
+                                <button type="button" class="btn btn-danger">Transfer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <img class="col-md-6" src="assets/images/main-images/grid-4-1.jpg" alt="">
-                <img class="col-md-6" src="assets/images/main-images/grid-4-2.jpg" alt="">
+                <div class="col-md-6 mr-auto tables">
+                    <div>
+                        <h4 class="pt-3">Recent Orders</h4>
+                        <table class="main-table">
+                            <tr class="main-table__headers">
+                                <th class="main-table__header">Customer</th>
+                                <th class="main-table__header">Product</th>
+                                <th class="main-table__header">Ivoice</th>
+                                <th class="main-table__header">Price</th>
+                                <th class="main-table__header">Status</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-7.jpeg" alt="">
+                                        <p class="mb-2">Andy King</p>
+                                    </div>
+                                </td>
+                                <td>Nike Sport</td>
+                                <td>#76894</td>
+                                <td>$88.00</td>
+                                <td class="different-td">
+                                    <p>Shipped</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-4.jpeg" alt="">
+                                        <p class="mb-2">Irene Collins</p>
+                                    </div>
+                                </td>
+                                <td>Speakers</td>
+                                <td>#75844</td>
+                                <td>$58.00</td>
+                                <td class="different-td">
+                                    <p>Paid</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-5.jpeg" alt="">
+                                        <p class="mb-2">Shakur Bakinski</p>
+                                    </div>
+                                </td>
+                                <td>I-pod</td>
+                                <td>#06931</td>
+                                <td>$32.00</td>
+                                <td class="different-td">
+                                    <p>Pending</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-6.jpeg" alt="">
+                                        <p class="mb-2">Eyyub Yaqubov</p>
+                                    </div>
+                                </td>
+                                <td>Tesbeh</td>
+                                <td>#61233</td>
+                                <td>$31.69</td>
+                                <td class="different-td">
+                                    <p>Shipped</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-10.jpeg" alt="">
+                                        <p class="mb-2">Letish Kate</p>
+                                    </div>
+                                </td>
+                                <td>Air Blower</td>
+                                <td>#51289</td>
+                                <td>$54.00</td>
+                                <td class="different-td">
+                                    <p>Paid</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-11.jpeg" alt="">
+                                        <p class="mb-2">Will Smith</p>
+                                    </div>
+                                </td>
+                                <td>Nike Sport</td>
+                                <td>#85149</td>
+                                <td>$95.00</td>
+                                <td class="different-td">
+                                    <p>Pending</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/users/profile-13.jpeg" alt="">
+                                        <p class="mb-2">Andy King</p>
+                                    </div>
+                                </td>
+                                <td>Nike Air</td>
+                                <td>#74369</td>
+                                <td>$28.00</td>
+                                <td class="different-td">
+                                    <p>Paid</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6 tables">
+                    <div>
+                        <h4 class="pt-3">Top Selling Products</h4>
+                        <table class="main-table">
+                            <tr class="main-table__headers">
+                                <th class="main-table__header">Product</th>
+                                <th class="main-table__header">Price</th>
+                                <th class="main-table__header">Discount</th>
+                                <th class="main-table__header">Sold</th>
+                                <th class="main-table__header">Source</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/speaker.jpg" alt="">
+                                        <p class="mb-2">Speakers</p>
+                                    </div>
+                                </td>
+                                <td>$84.00</td>
+                                <td>$10.00</td>
+                                <td>240</td>
+                                <td class="different-td_2">
+                                    <p>Direct</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/sunglass.jpg" alt="">
+                                        <p class="mb-2">Sunglasses</p>
+                                    </div>
+                                </td>
+                                <td>$56.07</td>
+                                <td>$5.07</td>
+                                <td>190</td>
+                                <td class="different-td_2">
+                                    <p>Google</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/watch.jpg" alt="">
+                                        <p class="mb-2">Watch</p>
+                                    </div>
+                                </td>
+                                <td>$88.00</td>
+                                <td>$20.00</td>
+                                <td>66</td>
+                                <td class="different-td_2">
+                                    <p>Ads</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/laptop.jpg" alt="">
+                                        <p class="mb-2">Laptop</p>
+                                    </div>
+                                </td>
+                                <td>$110.00</td>
+                                <td>$33.00</td>
+                                <td>35</td>
+                                <td class="different-td_2">
+                                    <p>Email</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/camera.jpg" alt="">
+                                        <p class="mb-2">Camera</p>
+                                    </div>
+                                </td>
+                                <td>$126.04</td>
+                                <td>$26.04</td>
+                                <td>30</td>
+                                <td class="different-td_2">
+                                    <p>Refferal</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/shoes.jpg" alt="">
+                                        <p class="mb-2">Shoes</p>
+                                    </div>
+                                </td>
+                                <td>$108.09</td>
+                                <td>$47.09</td>
+                                <td>130</td>
+                                <td class="different-td_2">
+                                    <p>Google</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <img class="rounded-circle w-25 mt-2" src="assets/images/defaults/headphones.jpg" alt="">
+                                        <p class="mb-2">Headphones</p>
+                                    </div>
+                                </td>
+                                <td>$168.09</td>
+                                <td>$47.09</td>
+                                <td>170</td>
+                                <td class="different-td_2">
+                                    <p>Ads</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
             </div>
 
         </div>
