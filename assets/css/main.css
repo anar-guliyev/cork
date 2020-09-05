@@ -5,13 +5,36 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.side-bar__items::-webkit-scrollbar {
+    width: 0px;
+}
+
+.side-bar__items:hover::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+.side-bar__items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+.side-bar__items::-webkit-scrollbar-thumb {
+    background: rgb(37, 37, 37);
+}
+
+.side-bar.opened {}
+
 
 /* Header */
 
 .main-header {
     position: fixed;
     width: 100vw;
-    height: 20vh;
     z-index: 2;
 }
 
@@ -81,6 +104,11 @@
 .btn {
     background-color: #060818;
     border: none;
+}
+
+.btn:focus {
+    border: none;
+    box-shadow: none;
 }
 
 .dropdown-toggle::after {
@@ -179,6 +207,10 @@
     color: white;
 }
 
+.nav-activate:focus {
+    outline: none;
+}
+
 
 /* body */
 
@@ -194,23 +226,7 @@ body {
     background: #060818;
     bottom: 0;
     left: 0;
-}
-
-.side-bar__item {
-    text-decoration: none;
-    color: #506690;
-    display: block;
-    margin: 1rem auto;
-}
-
-.side-bar__item:first-of-type {
-    margin-top: 2rem;
-}
-
-.side-bar__item:hover {
-    background: #3b3f5c;
-    color: white;
-    text-decoration: none;
+    transition: width 0.3s ease-in;
 }
 
 .side-bar__items {
@@ -221,11 +237,37 @@ body {
     position: relative;
 }
 
-.item-positions {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.activate {
+    display: none;
+}
+
+.activate-sidebar {
+    width: 9rem;
+}
+
+.side-bar__items>ul {
+    list-style: none;
+}
+
+.side-bar__header:focus,
+.side-bar__header:hover,
+.side-bar__header:active {
+    outline: none;
+    background: #3b3f5c;
+    border: none;
+}
+
+.dash-links:hover,
+.dash-links:active {
+    background: #3b3f5c;
+    color: white;
+    border-radius: 5px;
+}
+
+.list-dash a,
+.list-dash svg,
+.list-dash i {
+    color: #506690;
 }
 
 .card-body {
@@ -272,8 +314,9 @@ body {
 /* main */
 
 .content {
-    margin-left: 14rem;
+    margin-left: 13.5rem;
     padding-top: 7rem;
+    transition: margin-left 0.3s ease-in;
 }
 
 .row {
@@ -358,6 +401,10 @@ body {
 .different-td_2 p {
     border-bottom: dashed 1px white;
     text-align: center;
+}
+
+.activate-content {
+    margin-left: 9.3rem;
 }
 
 @media (max-width: 767px) {
